@@ -1,0 +1,167 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi)
+\usepackage{lipsum} %This package just generates Lorem Ipsum filler text.
+\usepackage{fullpage} % changes the margin
+\usepackage{indentfirst}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{chngpage}
+\setlength{\parindent}{2em}
+\renewcommand{\baselinestretch}{1.1} %make line spacing bigger
+%custom commands
+%\usepackage{pgfplots}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+%Header-Make sure you update this information!!!!
+
+\title{Referee Report for the Quarterly Journal of Economics \\
+\Large ``The effect of human capital on earnings: Evidence from a reform at Columbia's top university"}
+\author{Rachel Anderson}
+\maketitle
+
+\section*{Overview}
+
+The paper aims to test whether the returns to college education result from human capital accumulation or the fact that attending college signals higher ability to employers.  The author does this by studying the effects of a curriculum reform at a top Colombian university that reduced the number of required courses for its economics and business programs by 20\% and 14\% respectively; but did not change the quality or amount of incoming and graduating students.  She estimates that after the reform, graduates' wages fell by approximately 16\% in economics and 13\% percent in business, which she claims to be a result of less human capital accumulation.  Exploring the mechanisms through which wages declined, the author suggests that students performed worse in the recruitment process, which led them to be placed in lower-quality firms.  Specifically, for the economist recruitment process at the Central Bank of Colombia, she finds that the reform reduced the probability of being hired by 17 percentage points. 
+
+\section*{Contribution}
+
+This is not the first paper to attempt to estimate the effect of human capital accumulation on wages, separate from that of signaling; however, it is one of the first to do so convincingly, and in a college setting.  Previous papers on the topic focusing on primary and secondary school settings have achieved mixed results, and generally support a signaling framework (\cite{hu16}, \cite{bedard01}, \cite{lang86}).  A related strand of literature seeks to measure directly whether there is signaling value to academic degrees (Clark and Martorell; Murnane and Willett).  Although it cannot resolve these inconsistencies in the literature, this paper contributes a convincing piece of evidence in favor of human capital theory, and provides important information about the tools employers use to learn about workers' expected productivity.  These findings also contribute to a third strand of literature that estimates the returns to different types of post-secondary education by separating the effect of the institution versus the field of study (Dale and Krueger); this paper suggests that heterogeniety in returns may be due to different sets of skills in each degree, not due to differences in selectivity.
+
+
+\section*{An unanswered threat to identification}
+
+The key identification assumption is that the curriculum reform did not alter the selection of entering or graduating students at Los Andes.  If this is true, then a pure ``signaling" model predicts that the reform should not affect the wages of new graduates because there is no change in the unobserved ability of students.  By contrast, the human capital model predicts that wages should decline after the reform, due to a decline in the value added from the economics and business programs at Los Andes. 
+
+While the author does provide evidence that the composition of entering and graduating students has not changed on dimensions such as high school exit exam performance, she overlooks an institutional detail poised to threaten her results: the introduction of national, field-specific college exit exams in Colombia in 2004.
+
+In 2004, the agency that administers high school exit exams in Colombia introduced field-specific college exit exams to be administered in every college that offers a related program.  The purported intent of this initiative was to introduce elements of accountability into the college market, so that school-level aggregate scores were made available and used by news outlets as part of college rankings.   The curriculum change at Universidad de Los Andes analyzed in the paper under review occurred in 2006, so that the pre- and post-reform groups are likely to have been directly affected by the introduction of national exit exams. 
+
+Although exit exams did not become mandatory for graduation until 2009, large proportions of students elected to take the tests upon introduction.  The test-taking rate jumped from 10 percent in 2004, to 55 percent in 2005, to over 60 percent of the 2006 graduating cohort.  Exploiting heterogeneity in gradual exam rollout by field, MacLeod et al. found that earnings were less correlated with a college's reputation (as measured by the mean \textit{admission} score of its graduates) and more correlated with ability (as measured by an increase in importance individual exit exam performance and an aggregate decline in the return to the high school exit exam) in programs like economics and business that began offering exit exams in 2004 (see Table \ref{tab:macleon}).  
+
+The author's baseline database contains all students who started college between 2002 and 2007 and graduated after Los Andes and other top-10 schools, and hwo enrolled in economics or business, and so the fact that she does not control for the proportion of students taking the exit exams at each university is troubling. 
+
+Furthermore, there is the issue that the curriculum reform at Los Andes was a direct response to the introduction of national exit exams. [[ think about this]  The author argues that Los Andes was the only school to implement this practice at the time; but the evidence in MacLeod et al. suggests that other programs may have introduced test preparation sessions and other stuff.  According to MacLeod et al. (2017), the introduction of exit exams may have prompted colleges to change curricula and add test preparation sessions, or individuals to work harder in preparation for the exams.
+
+
+
+As such THIS MECHANISM MAY BE AT PLAYYY. 
+
+Furthermore, "The results show that in programs with exams, the ability of incoming studentsbecame more correlated with exit exam reputation, and less correlated with Icfesreputation. In other words, school programs whose exit exam performance exceededtheir average Icfes performance saw increases in the ability of their incoming classes.This suggests students selected different programs and/or colleges as new informationon their quality became available."
+
+
+college exit exams provide students another opportunity to signal their skill, as many graduates list scores on their CVs and online profiles.  Additionally, exit exams may affect faculty recommendations or students' job search behavior after learning their position in the national distribution of exam takers.  Based on this observation, MacLeod et al found that 
+\begin{itemize}
+\item
+\item In 2004 programs, earnings are less correlated with reputation in cohorts following the exit exam introduction.  
+\end{itemize}
+
+If we do not control for students who choose to take the exam, and also for their performance, it means that the results may be driven by omitted variable bias; the direction of which is unknown.  
+
+\begin{table}[h!]
+ \begin{adjustwidth}{-.75in}{-.75in} 
+ \begin{center}
+ \caption{Returns to reputation and ability by program and cohort (MacLeod et al. 2017)}
+ \vspace{8pt}
+\begin{tabular}{cccccccccc}
+\toprule
+             &                    &        &          & \multicolumn{3}{c}{Return to reputation}&\multicolumn{3}{c}{Return to ability}       \\
+             \cmidrule(lr){5-7} \cmidrule(lr){8-10}
+Program area & Program            & N      & Colleges & 2003-04              & 2005-09 & Diff. & 2003-04           & 2005-09 & Diff. \\
+\midrule
+Business     & Administraci\'on     & 85,325 & 46       & 0.18                 & 0.14    & -0.05 & 0.04              & 0.03    & -0.01 \\
+Business     & Contadur\'ia p\'ublica & 49,714 & 36       & 0.18                 & 0.09    & -0.09 & 0.03              & 0.03    & 0.00  \\
+Business     & Econom\'ia           & 25,879 & 21       & 0.21                 & 0.11    & -0.10 & 0.05              & 0.03    & -0.02 \\
+\bottomrule
+\end{tabular}
+\label{tab:macleod}
+\end{center}
+\end{adjustwidth}
+\end{table}
+
+
+Macleod recognizes that there are competing hypotheses otehr than transmitting info about ability:
+ school-mean exit exam scores were publicized, which may have altered employers' perceptions of collegs' labor marekts. Exit exams may have prompted colleges to chang ecurricula or add teest prep, or indviiduals tow ork harder in prep for exams. 
+ 
+
+ 
+ Conclude that they cannot rule out the hypotehsis that college reputation is merely serving as a signal for unobservable characteristics that themselves are related human capital accumulation.  Further, if sortin goccur son the ability dimension, increasing conditional return to reputation could arise because admission scores are imperfect measures of abiity. 
+ 
+ Providing more information about student skill reduces the importance of reputation.  Even after controlling for admission scores, a graduate's starting earnings and earnings growth are positively correlated with college reputation. 
+
+While students may not have reported their scores, the itnroduction of the exam potentially affected the information available in that individual's labor market.   We may in fact be observing regression to the mean!!!!!!!!
+
+All of this evidence points to the fact that X Y Z.
+
+It creates this problem in here results 
+
+ 
+
+
+ During the period the author studies, Colombia  economics and business  after which students began listing their scores on their CVs.  
+
+Therefore, we need to look at the exit scores of students at other schools.  It may not be human capital, but the fact that Los Andes does not accurately prepare its students ont he exit exam socr.es  If other schools,r ecognzing this, will train people for exam.  Exit exams are a bad signal of ability, perhaps, but if it is salient with employers we may still have the same outcome that the author observes! 
+
+The correlation between reputation and log earnings in not constant
+
+
+
+The biggest threat to identification in this paper is the fact that exit exams were introduced for economics in 2004.  Meaning that there is an additional signal. 
+
+\begin{enumerate}
+\item 
+\item Theory: The paper uses an explicit theoretical model.  Does it hold upon scruitiny? is there a better alternative theory?
+\item Identification strategy:  
+
+So yes there is human capital but is that really surprising.  More interesting would be to find the part that corresponds purely with the return to human capital and the return to the signal. 
+
+\item Gaps in the literature
+\item Data
+\item Empirical Analysis
+\item Mechanisms
+\end{enumerate}
+
+\section*{Letter to the editor}
+MUST THINK.  
+
+
+other paper has looked st colombia.  this paper does this thing.
+
+ issue in and obtained mixed results, which raises questions about the generalizability of the signal vs. human capital debate by country/level of schooling.  Ebel and Hu (2016) found that an additional year of primary school; supports the signaling value of earning a credential; Lang and Kropp. Bedard 
+
+
+
+She provides additional evidence to a long-standing debate over whether the mechanisms through which education leads to higher wages is driven by increases in productivity or a signal of ability.
+
+The paper tries to do this by analyzing a curriculum reform at Universidad de Los Andes, the top ranked university in Colombia, which reduced the amount of coursework required for graduation by 20 and 14 percent in its economics and business programs, respectively.   Arteaga argues that the reform did not change the quality of incoming or graduating students (ergo they should be the same in ability), and so it serves as a valid natural experiment to test these theoreis.
+
+Arteaga accomplishes what she sets out to do. Her research question is focused ,well investigated, and her results are robust to many specifications.  Hence, her results are convincing.
+
+  She also investigates the mechanism by which wages decline, and concludes that they may result from a decline in performance during the recruitment process, which led students to be placed in lower-quality firms.  The probability of being hired dropped by 17 percentage points in a firm that normally recruits many students.
+
+
+
+This paper contributes to several literatures: (1) human capital vs signaling theoretical debate, (2) that which estimates the returns to different types of post-secondary education by separating the effect of the institution versus the field of study (which argues degree type more important than institution). Main contribution is that it provides evidence suggesting that the source of heterogeneity in returns to education may be due to the different sets of skills and knowledge acquired in each degree, and not to differences in selectivity.
+
+Says she is first paper to investigate exact mechanism through which wage decline from less human capital.   contributes to long debate about whether signaling or human capital is responsible for the returns to a university degree.
+
+HOW DOES PAPER COMPARE WITH PREVIOUS SIMILAR EFFORTS
+
+Submitted for journal of public economics -- is it a good it?
+
+
+
+\section*{Data}
+\section*{Empirical Analysis}
+\section*{Mechanisms}
+
+Arteaga attempts to identify potential through interviews with employers and by analyzing data from the Los Andes Department of Economics about its students labor market outcomes.  She find sthis...
+
+Makes good use of their data, but more interesting would be to see where students apply.  I am cruiosu about the cells.  
+
+
+
+%\bibliography{./refReportrefs} 
+%\bibliographystyle{apa}
+
+\end{document}
